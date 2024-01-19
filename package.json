@@ -1,0 +1,24 @@
+{
+  "name": "guessgame-hamzagul",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "bin": "./guess_game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "calk": "^0.0.1-security",
+    "inquirer": "^9.2.12",
+    "nanospinner": "^1.1.0",
+    "node-banner": "^1.4.0",
+    "spinner": "^0.3.4"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}
