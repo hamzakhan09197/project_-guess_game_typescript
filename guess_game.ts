@@ -6,7 +6,7 @@ import showBanner from "node-banner";
 import { createSpinner } from 'nanospinner';
 let sleep = () => new Promise((r) => setTimeout(r, 2000));
 async function banner() {
-    await showBanner('Number Guessing Game', 'this program genrate a  random number that you have to guess.')
+    await showBanner('Number Guessing Game', 'This program genrate a random number that you have to guess.')
 }
 
 // this is the main function
