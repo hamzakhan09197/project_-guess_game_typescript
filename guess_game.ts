@@ -9,7 +9,7 @@ async function banner() {
     await showBanner('Number Guessing Game', 'this program genrate a  random number that you have to guess.')
 }
 
-
+// this is the main function
 let startGame = async () => {
 
     let { deficulty } = await inquirer.prompt({
