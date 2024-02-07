@@ -9,7 +9,6 @@ async function banner() {
     await showBanner('Number Guessing Game', 'This program genrate a random number that you have to guess.')
 }
 
-// this is the main function
 let startGame = async () => {
 
     let { deficulty } = await inquirer.prompt({
@@ -88,6 +87,8 @@ let startGame = async () => {
 
 
     if (playAgain) {
+        console.log(chalk.whiteBright.bold(`\n ---{++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++}---\n`));
+        
         startGame()
     };
 

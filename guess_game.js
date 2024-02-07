@@ -7,7 +7,6 @@ let sleep = () => new Promise((r) => setTimeout(r, 2000));
 async function banner() {
     await showBanner('Number Guessing Game', 'This program genrate a random number that you have to guess.');
 }
-// this is the main function
 let startGame = async () => {
     let { deficulty } = await inquirer.prompt({
         name: "deficulty",
@@ -64,6 +63,7 @@ let startGame = async () => {
         message: chalk.rgb(245, 162, 162)('If you want to paly again then press "Y" otherwise "N". ')
     });
     if (playAgain) {
+        console.log(chalk.whiteBright.bold(`\n ---{++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++}---\n`));
         startGame();
     }
     ;
